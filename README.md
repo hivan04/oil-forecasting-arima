@@ -1,5 +1,5 @@
 # Forecasting Crude Oil Futures Spread (ARIMA vs ARIMAX Models)
-
+This project was for my Financial Econometrics coursework at Imperial ~ where we achieved 80%!
 This project investigates whether econometric models can forecast the **WTI crude oil futures spread (CL2–CL1)** and whether such forecasts can generate **economically meaningful trading strategies**.
 
 ---
