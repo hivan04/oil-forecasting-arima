@@ -16,18 +16,11 @@ This project compares two models:
 
 We evaluate both **statistical forecasting performance** and **real-world trading profitability**.
 
----
-
 ## 🎯 Objectives
 
 - Forecast the oil futures spread using time-series models  
 - Evaluate whether **exogenous variables improve predictions**  
 - Test whether forecasts can be translated into a **profitable trading strategy**
-
----
-
-
----
 
 ## 📊 Data
 
@@ -45,8 +38,6 @@ We evaluate both **statistical forecasting performance** and **real-world tradin
 
 - Captures **contango vs backwardation**
 - Log transformation improves **stationarity and stability** :contentReference[oaicite:1]{index=1}
-
----
 
 ## ⚙️ Methodology
 
@@ -72,8 +63,6 @@ We evaluate both **statistical forecasting performance** and **real-world tradin
 
 ⚠️ Note: Sample size reduced significantly due to data alignment (~85% reduction), impacting performance :contentReference[oaicite:2]{index=2}
 
----
-
 ### 3. Model Evaluation
 
 #### Statistical Metrics
@@ -86,8 +75,6 @@ We evaluate both **statistical forecasting performance** and **real-world tradin
 - Non-rolling forecasts  
 - Rolling window forecasts (24-month window)
 
----
-
 ## 📈 Trading Strategy
 
 A simple signal-based strategy:
@@ -95,13 +82,13 @@ A simple signal-based strategy:
 - **Long** if forecasted spread > current spread  
 - **Short** otherwise  
 
-\[
+$$
 Signal_{t+1} =
 \begin{cases}
 +1 & \hat{S}_{t+1} > S_t \\
 -1 & \text{otherwise}
 \end{cases}
-\]
+$$
 
 Performance evaluated via:
 - Cumulative returns  
@@ -132,8 +119,6 @@ Performance evaluated via:
   - Poor profitability  
   - High turnover  
   - Large drawdowns  
-
----
 
 ## ⚠️ Key Insight
 
